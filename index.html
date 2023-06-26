@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cuatro Esquinitas</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/js.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logi">
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#terapias">TERAPIAS</a></li>
+        <li><a href="#staff">NOSOTROS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+    <div class="nave">
+      <a href="#" onclick="openModal('login')">LOGIN</a>
+      <a href="#" onclick="openModal('register')">REGISTER</a>
+    </div>
+    <div class="nave2">
+      <a href="Admision.html">ADMISIÓN</a>
+      <a href="Alimentacion.html">ALIMENTACIÓN</a>
+    </div>
+  </header>
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('login')">&times;</span>
+      <h2>Ingresar</h2>
+      <form>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button type="submit" onclick="iniciarSesion()">Iniciar sesión</button>
+      </form>
+    </div>
+  </div>
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('register')">&times;</span>
+      <h2>Registro</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido" required>
+        <input type="text" placeholder="Direccion" required>
+        <h6>Fecha de Nacimiento</h6>
+        <input type="date" placeholder="Fecha de nacimiento" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button type="submit" onclick="registrarse()">Registrarse</button>
+      </form>
+    </div>
+  </div>
+  <section class="inicio">
+    <img src="images/esquinitas iso.png" alt="">
+    <h1>CUATRO ESQUINITAS</h1>
+    <p>Espacio terapéutico destinado a niños que presentan desafíos en su desarrollo</p>
+  </section>
+  <section class="terapias">
+    <a name="terapias"></a>
+    <div class="te">
+      <div class="to">
+        <img src="images/to.jpg" alt="Terapia Ocupacional">
+        <h1>TERAPIA <br> OCUPACIONAL</h1>
+        <ul>
+          <li>Niños con trastornos neuromotores.</li>
+          <li>Niños con dificultades en el Procesamiento Sensorial.</li>
+          <li>Niños con dificultades en la escritura.</li>
+          <li>Bebés con dificultades en la auto-regulación.</li>
+          <li>Trastorno del espectro autista.</li>
+        </ul>
+      </div>
+      <div class="fono">
+        <img src="images/fono.jpg" alt="Fonoaudiologia">
+        <h1>FONOAUDIOLOGÍA</h1>
+        <ul>
+          <li>Trastornos de la comunicación.</li>
+          <li>Trastorno específico del lenguaje.</li>
+          <li>Trastorno del espectro autista.</li>
+          <li>Síndrome de Down y otros síndromes genéticos.</li>
+          <li>Retraso madurativo.</li>
+        </ul>
+      </div>
+      <div class="psico">
+        <img src="images/kine.jpg" alt="Psicopedagogía">
+        <h1>PSICOPEDAGOGÍA</h1>
+        <ul>
+          <li>Retraso de pautas madurativas.</li>
+          <li>Trastorno del Neurodesarrolo.</li>
+          <li>Trastornos de aprendizaje: dislexia, disgrafía, discalculia.</li>
+          <li>Alteraciones en el desarrollo intelectual.</li>
+          <li>Problemas de conducta, hiperactividad e impulsividad.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="staff">
+    <a name="staff"></a>
+    <div class="st">
+      <h1>NOSOTROS</h1>
+      <div class="barra"></div>
+      <div class="directora">
+        <img src="images/directora.jpg" alt="">
+        <h2>Gloria Inés Chumbita</h2>
+        <h3><strong>Directora</strong></h3>
+        <h3>La Rioja, Argentina</h3>
+      </div>
+      <div class="sub">
+        <img src="images/sub.jpg" alt="">
+        <h2>Rafaella Palmieri</h2>
+        <h3><strong>Subdirectora</strong></h3>
+        <h3>La Rioja, Argentina</h3>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="footer">
+    <a name="contacto"></a>
+    <h1>CONTACTO</h1>
+    <h2>REDES SOCIALES</h2>
+    <div class="wasa">
+      <img src="images/whatsapp.png" alt="WhatsApp">
+      <p>+ 549 3804-842855</p>
+    </div>
+    <div class="email">
+      <img src="images/mail.png" alt="Mail">
+      <p>4esquinitas.lr@gmail.com</p>
+    </div>
+    <div class="ubic">
+      <a href="https://goo.gl/maps/iNQ7YhwTaU34ngXo7"><img src="images/ubicacion.png" alt="Ubicacion"></a>
+      <p>Av. Las Palmeras 2785, frente <br> al Parque de La Ciudad</p>
+    </div>
+    <div class="ig">
+      <a href="https://www.instagram.com/cuatro.esquinitas/"><img src="images/instagram.png" alt="Instagram"></a>
+      <p>@cuatro.esquinitas</p>
+    </div>
+    <div class="face">
+      <a href="https://www.facebook.com/Cuatro.EsquinitasLaRioja"><img src="images/facebook.png" alt="Facebook"></a>
+      <p>4 Esquinitas - Espacio Terapéutico para el desarrollo de habilidades</p>
+    </div>
+  </section>
+  <section class="copy">
+    <h1>© All Rights Reserved</h1>
+    <h2>Desarrolladores: Palmieri Santiago - Irina Zoé Luna</h2>
+  </section>
+</body>
+
+</html>

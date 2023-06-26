@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cuatro Esquinitas</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/js.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logi">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">TERAPIAS</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="nave">
+            <a href="#" onclick="openModal('login')">LOGIN</a>
+            <a href="#" onclick="openModal('register')">REGISTER</a>
+        </div>
+        <div class="nave2">
+            <a href="Admision.html">ADMISIÓN</a>
+            <a href="Alimentacion.html">ALIMENTACIÓN</a>
+        </div>
+    </header>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('login')">&times;</span>
+            <h2>Ingresar</h2>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit" onclick="iniciarSesion()">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('register')">&times;</span>
+            <h2>Registro</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellido" required>
+                <input type="text" placeholder="Direccion" required>
+                <h6>Fecha de Nacimiento</h6>
+                <input type="date" placeholder="Fecha de nacimiento" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit" onclick="registrarse()">Registrarse</button>
+            </form>
+        </div>
+    </div>
+    <section class="form2">
+        <div class="adm2">
+            <h1>ALIMENTACIÓN</h1>
+            <h2>Rellene los siguientes espacios</h2>
+            <form action="index.html">
+                <label for="">Nombre</label>
+                <br>
+                <input type="text" class="forma3" placeholder="Nombre del paciente" required>
+                <br>
+                <label for="">Apellido</label>
+                <br>
+                <input type="text" class="forma3" placeholder="Apellido del paciente" required>
+                <br>
+                <label for="">Edad</label>
+                <br>
+                <input type="text" class="forma3" placeholder="Edad del paciente" required>
+                <br>
+                <label for="">¿Usa sonda o botón Gástrico?</label>
+                <br>
+                <input type="text" class="forma3" placeholder="" required>
+                <br>
+                <label for="">¿Fue amamantado? ¿Tomo mamadera? <br>¿Desde – Hasta?</label>
+                <br>
+                <textarea name="textarea" class="forma4" placeholder="" cols="40" rows="5"></textarea>
+                <br>
+                <label for="">¿A qué edad se introdujo la papilla?</label>
+                <br>
+                <input type="text" class="forma3" placeholder="" required>
+                <br>
+                <label for="">Comente la dificultad de alimentación actual:</label>
+                <br>
+                <textarea name="textarea" class="forma4" placeholder="" cols="40" rows="5"></textarea>
+                <br>
+                <p>¿Fue valorado por médico especialista?</p>
+                <label for="Python">Gatroenterólogo</label>
+                <input type="checkbox" id="" name="Python">
+                <label for="C#">Alergista</label>
+                <input type="checkbox" id="" name="C#">
+                <label for="JavaScrip">Nutricionista</label>
+                <input type="checkbox" id="JavaScript" name="JavaScript">
+                <br>
+                <label for="">Otro</label>
+                <br>
+                <input type="text" class="forma3">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <section class="copy2">
+        <h1>© All Rights Reserved</h1>
+        <h2>Desarrolladores: Palmieri Santiago - Irina Zoé Luna</h2>
+    </section>
+</body>
+
+</html>
